@@ -15,13 +15,26 @@ This project transforms raw telecom customer data into **actionable insights** t
 
 ---
 
-## 📂 Project Files
+## 🗂 Project Structure
 
-- 📊 **Customer Churn Analysis.pbix** – Power BI interactive dashboard  
-- 📑 **Customer Churn Analysis.pptx** – Presentation-ready insights deck  
-- 📝 **Power BI Projects_Innomatics.docx** – Project documentation  
-
----
+```text
+Customer-Churn-Analysis/
+│
+├── Dataset/
+│   └── Customer-Churn.csv
+│
+├── PowerBI/
+│   └── Customer Churn Analysis.pbix
+│
+├── Screenshots/
+│   ├── churn_drivers.png
+│   ├── contract_billing.png
+│   ├── customer_demographics.png
+│   └── service_subscription.png
+│
+├── DAX_Calculations.md
+├── README.md
+```
 
 ## 🧾 Dataset Overview
 
