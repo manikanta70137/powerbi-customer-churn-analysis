@@ -51,11 +51,14 @@ The dataset represents telecom customer subscription data with the following key
 ## 📌 Dashboards & Analysis Modules
 
 ### 1️⃣ Customer Demographics Analysis
+**What this dashboard covers:**
 - Gender distribution and churn comparison
 - Senior citizen churn behavior
 - Tenure-based customer segmentation
 - Churn rate variation across tenure groups
 - Monthly charge trends by tenure and gender
+
+![Customer Demographics Analysis](Screenshots/customer_demographics.png)
 
 **Key Insight:**  
 Early-tenure customers (0–12 months) churn the most, while gender has minimal impact on churn.
@@ -63,10 +66,13 @@ Early-tenure customers (0–12 months) churn the most, while gender has minimal 
 ---
 
 ### 2️⃣ Service Subscription Analysis
+**What this dashboard covers:**
 - Churn by internet service type (DSL, Fiber optic, No internet)
 - Add-on services impact on churn
-- Service combination risk analysis
+- Risky service combinations
 - Churn rate vs number of subscribed services
+
+![Service Subscription Analysis](Screenshots/service_subscription.png)
 
 **Key Insight:**  
 Fiber-optic customers show the highest churn, while customers with more bundled services churn less.
@@ -74,10 +80,13 @@ Fiber-optic customers show the highest churn, while customers with more bundled 
 ---
 
 ### 3️⃣ Contract & Billing Insights
+**What this dashboard covers:**
 - Churn rate by contract type
 - Payment method vs churn distribution
 - Paperless billing impact on churn
 - Monthly and total charge trends by contract
+- 
+![Contract & Billing Insights](Screenshots/contract_billing.png)
 
 **Key Insight:**  
 Month-to-month contracts and electronic check payments have the highest churn rates, while two-year contracts retain customers best.
@@ -85,10 +94,13 @@ Month-to-month contracts and electronic check payments have the highest churn ra
 ---
 
 ### 4️⃣ Churn Prediction & Key Drivers
+**What this dashboard covers:**
 - Overall churn rate and revenue impact
 - Lost vs retained revenue analysis
 - AI-inspired churn risk segmentation (Low / Medium / High)
 - Multi-factor churn concentration analysis
+
+![Churn Prediction & Key Drivers](Screenshots/churn_drivers.png)
 
 **Key Insight:**  
 Tenure, contract type, and internet service are the strongest churn drivers, with most customers falling into the medium-risk segment.
