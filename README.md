@@ -1,152 +1,122 @@
-Customer Churn Analysis using Power BI
-Project Overview
+Power BI Customer Churn Analysis
 
-This project presents an end-to-end Customer Churn Analysis for a telecom company using Power BI. The primary objective is to identify key churn drivers, high-risk customer segments, and revenue impact in order to support data-driven customer retention strategies.
+This project focuses on analyzing customer churn behavior for a telecom company using Power BI to answer real-world business questions related to customer demographics, service subscriptions, contract types, billing methods, and revenue impact.
 
-The dashboard is fully interactive and built using Power Query for data transformation, DAX for calculated columns and measures, and Power BI visual analytics for business storytelling.
+The project demonstrates end-to-end Power BI analytics skills, including data cleaning, data modeling, DAX-based calculations, and interactive dashboard development for business decision-making.
 
-Business Objectives
+Skills Demonstrated
 
-Analyze customer churn patterns across demographics, services, and contracts
+Data cleaning and transformation using Power Query
 
-Identify high-risk customer segments contributing most to churn
+Data modeling with relationships and star-schema concepts
 
-Measure churn impact on revenue (lost vs retained revenue)
+Creation of calculated columns and measures using DAX
 
-Enable data-driven decisions for customer retention and engagement
+KPI development for churn and revenue analysis
 
-Tech Stack
+Customer segmentation and risk analysis
 
-Power BI Desktop – Dashboard development and data modeling
+Business-focused dashboard design and storytelling
 
-Power Query – Data cleaning and transformation
+Project Structure
+customer-churn-analysis-powerbi/
+│
+├── Dataset/
+│   └── customer_churn.csv
+│
+├── PowerBI/
+│   └── Customer Churn Analysis.pbix
+│
+├── Screenshots/
+│   ├── customer_demographics.png
+│   ├── service_subscription.png
+│   ├── contract_billing.png
+│   └── churn_drivers.png
+│
+└── README.md
 
-DAX (Data Analysis Expressions) – Calculated columns, measures, KPIs
+Data Preparation Approach
 
-CSV Dataset – Telecom customer churn data
+Raw customer churn data was imported from a CSV file into Power BI.
 
-Dataset Summary
+Data cleaning and transformation were performed using Power Query, including:
 
-Total Records: 7,043 customers
+Handling missing and inconsistent values
 
-Target Variable: Churn (Yes / No)
+Data type corrections
 
-Key Attributes:
+Feature standardization for analysis
 
-Demographics: Gender, Senior Citizen, Partner, Dependents
+A structured data model was created with calculated columns and measures using DAX.
 
-Services: Phone, Internet, Streaming, Security, Tech Support
+This approach reflects real-world BI workflows where raw business data is transformed into analytics-ready datasets.
 
-Billing: Contract Type, Payment Method, Monthly Charges, Total Charges
+Business Questions Answered
 
-Tenure: Customer lifetime in months
+What is the overall customer churn rate?
 
-Dashboard Walkthrough and Insights
+How does churn vary across different tenure segments?
+
+Which customer demographics are more likely to churn?
+
+How do service subscriptions impact churn behavior?
+
+Which contract types and payment methods show higher churn?
+
+What is the revenue impact of churned versus retained customers?
+
+Which customer segments represent the highest churn risk?
+
+Dashboard Pages and Insights
 Customer Demographics Analysis
 
-Screenshot path:
-Screenshots/customer_demographics.png
+Analyzes churn across gender, senior citizen status, and tenure
 
-Analysis Covered:
+Identifies higher churn concentration in low-tenure customers
 
-Gender distribution of customers
-
-Senior citizen churn comparison
-
-Customer tenure segmentation
-
-Monthly charges versus tenure analysis
-
-Key Insights:
-
-Customers with low tenure (0–12 months) have the highest churn rate
-
-Senior citizens show relatively higher churn
-
-Monthly charges generally increase with tenure
+Highlights trends between tenure and monthly charges
 
 Service Subscription Analysis
 
-Screenshot path:
-Screenshots/service_subscription.png
+Evaluates churn by internet service type
 
-Analysis Covered:
+Analyzes impact of add-on services on churn
 
-Subscription distribution across services
-
-Churn rate by internet service type
-
-Impact of add-on services on churn
-
-Service count versus churn likelihood
-
-Key Insights:
-
-Fiber optic users show the highest churn
-
-Customers with fewer subscribed services are more likely to churn
-
-Bundled services improve customer retention
+Shows relationship between service count and churn likelihood
 
 Contract and Billing Insights
 
-Screenshot path:
-Screenshots/contract_billing.png
+Compares churn rates across contract types
 
-Analysis Covered:
+Analyzes payment method behavior
 
-Churn rate by contract type
-
-Payment method distribution and churn behavior
-
-Monthly and total charges comparison
-
-Tenure distribution across contract types
-
-Key Insights:
-
-Month-to-month contracts have significantly higher churn
-
-Customers using electronic check payments churn more frequently
-
-Long-term contracts lead to better customer retention
+Highlights tenure distribution by contract category
 
 Churn Drivers and Revenue Impact
 
-Screenshot path:
-Screenshots/churn_drivers.png
+Displays overall churn rate
 
-Analysis Covered:
+Identifies high-risk customer segments
 
-Overall churn rate
+Quantifies revenue lost due to churn versus retained revenue
 
-High-risk customer segments
+DAX Calculations Used
 
-Revenue lost due to churn versus retained revenue
+The project includes custom DAX calculated columns and measures, such as:
 
-Key Insights:
+Tenure segmentation (6-bucket and 12-bucket models)
 
-Overall churn rate is approximately 26 percent
+Service count per customer
 
-Churn is concentrated among month-to-month contract customers, low-tenure customers, and fiber optic service users
+Total customers and churned customers
 
-Churn results in substantial revenue loss, highlighting retention opportunities
+Churn rate calculation
 
-Data Modeling and DAX Calculations
+Lost revenue and retained revenue measures
 
-This project includes custom DAX calculated columns and measures to support advanced analysis, including:
+Churn risk categorization
 
-Tenure-based customer segmentation using 6 and 12 bucket models
-
-Service count calculation per customer
-
-Core churn KPIs such as churn rate and churned customers
-
-Revenue impact analysis including lost and retained revenue
-
-Risk-based churn classification
-
-All DAX formulas are documented directly in the repository for transparency and interview discussion.
+These calculations enable deeper analytical insights beyond basic visual reporting.
 
 Key KPIs
 
@@ -160,33 +130,39 @@ Average Monthly Charges: Approximately 64.7
 
 Total Revenue: Approximately 456K
 
-Lost Revenue: Approximately 139K
+Lost Revenue Due to Churn: Approximately 139K
 
-Business Recommendations
+Business Impact and Insights
 
-Encourage customers to move from month-to-month contracts to long-term contracts
+Month-to-month contract customers exhibit the highest churn
 
-Promote bundled services to improve customer engagement
+Low-tenure customers are at the greatest risk of churn
 
-Incentivize automatic payment methods to reduce churn
+Fiber optic service users show higher churn compared to other services
 
-Target high-risk segments with personalized retention campaigns
+Churn leads to significant revenue loss, indicating strong retention opportunities
 
-Repository Structure
+How to Run the Project
 
-Customer-Churn-Analysis-PowerBI/
-Dataset/
-customer_churn.csv
-PowerBI/
-Customer Churn Analysis.pbix
-Screenshots/
-customer_demographics.png
-service_subscription.png
-contract_billing.png
-churn_drivers.png
-README.md
+Download the .pbix file from the PowerBI/ folder
+
+Open the file using Power BI Desktop
+
+Load or refresh the dataset if required
+
+Use slicers and filters to explore insights interactively
+
+Tools Used
+
+Power BI Desktop
+
+Power Query
+
+DAX (Data Analysis Expressions)
+
+CSV dataset
 
 Author
 
 Manikanta Chundu
-Data Analyst | Power BI | SQL | PythonHub profile links here
+Data Analyst | Power BI | SQL | Python
